@@ -3,6 +3,14 @@ using UnityEngine.UI;
 
 public class Timer : MonoBehaviour
 {
+
+    public static Timer instance = null;
+
+    private void Awake()
+    {
+        instance = this;
+    }
+
     public float nowTime;
     public Text timer_txt;
     public Text kill_txt;
@@ -16,7 +24,7 @@ public class Timer : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        timer_txt.text = "Time: "+((int)Time.time-nowTime).ToString();
+        timer_txt.text = "Time: "+((int)(Time.time-nowTime)).ToString();
         kill_txt.text = "Killed: " + GameOver.instance.killCount.ToString();
     }
 }

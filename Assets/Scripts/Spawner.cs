@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Spawner : MonoBehaviour
 {
+    public Transform enemy_folder;
     public GameObject enemy;
     float xPos;
     float yPos;
@@ -26,7 +27,7 @@ public class Spawner : MonoBehaviour
         if (Time.time - nowTime >= period)
         {
             period = Random.Range(1.5f,2.2f);
-            Instantiate(enemy,new Vector3(Random.Range(-3, 3), Random.Range(4.6f, 4.8f),0),enemy.transform.rotation);
+            Instantiate(enemy,new Vector3(Random.Range(-3, 3), Random.Range(4.6f, 4.8f),0),enemy.transform.rotation, enemy_folder);
             nowTime = Time.time;
             timer = 0;
         }

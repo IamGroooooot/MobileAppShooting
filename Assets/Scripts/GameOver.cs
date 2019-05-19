@@ -49,6 +49,8 @@ public class GameOver : MonoBehaviour
         else
         {
             gameoverPanel.SetActive(false);
+            Time.timeScale = 1;
+
         }
     }
 }

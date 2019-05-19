@@ -16,13 +16,12 @@ public class _JoyStick : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        
         Vector3 pos = GetComponent<Transform>().position;
 
         //GetComponent<Transform>().position = new Vector3(joystick.Horizontal * 2f, joystick.Vertical*2f - 1.5f, 0);
         float horizontal = joystick.Horizontal;
         float vertical = joystick.Vertical;
-
         //transform.position += horizontal * new Vector3(speed, 0, 0) * Time.deltaTime;
         //transform.position += vertical * new Vector3(0, speed, 0) * Time.deltaTime;
 
