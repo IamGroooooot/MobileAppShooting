@@ -5,7 +5,7 @@ using UnityEngine;
 public class Bullet : MonoBehaviour
 {
     Vector3 pos;
-    float speed = 0.1f;
+    float speed = 0.2f;
     // Start is called before the first frame update
     void Start()
     {
@@ -31,9 +31,9 @@ public class Bullet : MonoBehaviour
     {
         if (other.tag == "Enemy")
         {
-            Debug.Log("Enemy Destroyed");
-            FindObjectOfType<GameOver>().killCount++;
             Destroy(other.gameObject);
+            Debug.Log("Enemy Destroyed");
+            GameOver.instance.killCount++;
             Destroy(this.gameObject);
         }
     }

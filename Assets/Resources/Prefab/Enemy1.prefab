@@ -164,9 +164,10 @@ GameObject:
   m_Component:
   - component: {fileID: 4037400684909242}
   - component: {fileID: 65709912537988218}
+  - component: {fileID: 6395635164150151459}
   m_Layer: 0
   m_Name: Collider1
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -198,6 +199,22 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.3, y: 1.4, z: 5}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!54 &6395635164150151459
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1207335833493694}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &1223410075059380
 GameObject:
   m_ObjectHideFlags: 0
@@ -209,11 +226,11 @@ GameObject:
   - component: {fileID: 4149248501443468}
   m_Layer: 0
   m_Name: Collider
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &4149248501443468
 Transform:
   m_ObjectHideFlags: 0
@@ -318,9 +335,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4896445655670450}
-  - component: {fileID: 1337599677547563}
   - component: {fileID: 1337599677547564}
-  - component: {fileID: 1530213309}
+  - component: {fileID: 5835406182936538523}
+  - component: {fileID: 3151332062087404287}
   m_Layer: 0
   m_Name: Enemy1
   m_TagString: Enemy
@@ -354,7 +371,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: -270, y: 0, z: 179.99998}
---- !u!54 &1337599677547563
+--- !u!114 &1337599677547564
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1337599677547562}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56bcd520b79a5794a83b04d5cf95bf87, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!54 &5835406182936538523
 Rigidbody:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -370,19 +399,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &1337599677547564
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1337599677547562}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 56bcd520b79a5794a83b04d5cf95bf87, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!65 &1530213309
+--- !u!65 &3151332062087404287
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -390,11 +407,11 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1337599677547562}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 10, y: 2, z: 9}
+  m_Center: {x: 0, y: 0, z: -1}
 --- !u!1 &1406667033736958
 GameObject:
   m_ObjectHideFlags: 0
@@ -482,9 +499,10 @@ GameObject:
   m_Component:
   - component: {fileID: 4702037833452826}
   - component: {fileID: 65420326886585552}
+  - component: {fileID: 5512434744910827811}
   m_Layer: 0
   m_Name: Collider3
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -516,6 +534,22 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 10, y: 0.3, z: 1.5}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!54 &5512434744910827811
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1408682242103888}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &1445980474895476
 GameObject:
   m_ObjectHideFlags: 0
@@ -988,9 +1022,10 @@ GameObject:
   m_Component:
   - component: {fileID: 4734781234465508}
   - component: {fileID: 65575406342371834}
+  - component: {fileID: 8919798402430950532}
   m_Layer: 0
   m_Name: Collider4
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1022,6 +1057,22 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 5.5, y: 0.3, z: 2.5}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!54 &8919798402430950532
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1815162905951702}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &1955951779543640
 GameObject:
   m_ObjectHideFlags: 0
@@ -1109,9 +1160,10 @@ GameObject:
   m_Component:
   - component: {fileID: 4765779638494688}
   - component: {fileID: 65595959510910260}
+  - component: {fileID: 2509360226104618672}
   m_Layer: 0
   m_Name: Collider2
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1143,3 +1195,19 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 0.6, z: 4}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!54 &2509360226104618672
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1982702618828014}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0

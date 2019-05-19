@@ -1,10 +1,12 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+
 public class Enemy : MonoBehaviour
 {
     Vector3 pos;
     float speed = 0.05f;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -26,7 +28,7 @@ public class Enemy : MonoBehaviour
     {
         if(other.tag == "Air")
         {
-            FindObjectOfType<GameOver>().isGameOver = true;
+            GameOver.instance.isGameOver = true;
             Debug.Log("Player Destroyed");
             Destroy(other.gameObject);
             Destroy(this.gameObject);

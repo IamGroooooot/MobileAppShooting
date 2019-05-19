@@ -1,0 +1,2 @@
+C:\Users\duryk\Desktop\MobileAppDevelopment\MobileAppShooting\obj\Debug\Assembly-CSharp.csprojAssemblyReference.cache
+C:\Users\duryk\Desktop\MobileAppDevelopment\MobileAppShooting\obj\Debug\Assembly-CSharp.csproj.CoreCompileInputs.cache
