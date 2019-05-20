@@ -18,8 +18,8 @@ public class AddBullet : MonoBehaviour
     {
         if(FindObjectOfType<ShotBtn>().Pressed && Time.time - nowTime >=0.3f)
         {
-            GameObject b = Instantiate(bullet, transform.position, Quaternion.identity);
-            b.GetComponent<Bullet>().AddBullet(transform.position.x,transform.position.y,transform.position.z);
+            GameObject b = Instantiate(bullet, new Vector3(transform.position.x, transform.position.y+1f, transform.position.z), Quaternion.identity);
+            b.GetComponent<Bullet>().AddBullet(transform.position.x,transform.position.y+1f,transform.position.z);
             nowTime = Time.time;
         }
     }

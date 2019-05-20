@@ -30,6 +30,7 @@ public class Spawner : MonoBehaviour
             Instantiate(enemy,new Vector3(Random.Range(-3, 3), Random.Range(4.6f, 4.8f),0),enemy.transform.rotation, enemy_folder);
             nowTime = Time.time;
             timer = 0;
+            GameOver.instance.DestroyAllEnemy = false;
         }
     }
 }

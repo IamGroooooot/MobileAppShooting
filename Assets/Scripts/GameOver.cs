@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class GameOver : MonoBehaviour
 {
     public static GameOver instance = null;
-
+    public bool DestroyAllEnemy = false;
     private void Awake()
     {
         instance = this;
@@ -34,23 +34,23 @@ public class GameOver : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Time.timeScale != 0)
-        {
-            timerCounter += Time.deltaTime;
-        }
+
         if (isGameOver)
         {
             Time.timeScale = 0;
             gameoverPanel.SetActive(true);
-            Time_txt.text = "Time: " +((int)(timerCounter)).ToString();
+            Time_txt.text = "Time: " + ((int)(timerCounter)).ToString();
             Killed_txt.text = "Killed: " + ((int)(killCount)).ToString();
-           
         }
         else
         {
             gameoverPanel.SetActive(false);
             Time.timeScale = 1;
+        }
 
+        if (Time.timeScale != 0)
+        {
+            timerCounter += Time.deltaTime;
         }
     }
 }

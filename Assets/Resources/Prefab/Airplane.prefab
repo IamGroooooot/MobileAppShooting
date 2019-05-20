@@ -59,6 +59,7 @@ GameObject:
   - component: {fileID: 1143771906267672168}
   - component: {fileID: 1143771906267672169}
   - component: {fileID: 1289310684825786546}
+  - component: {fileID: 7141483976277749515}
   m_Layer: 0
   m_Name: Airplane
   m_TagString: Air
@@ -154,6 +155,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a9b5396f38834cd4ca5f647bad683c35, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  speed: 3
 --- !u!114 &1143771906267672169
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -178,8 +180,21 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 13.638825, y: 3.2560537, z: 10.850529}
+  m_Size: {x: 2, y: 3.2560537, z: 10.850529}
   m_Center: {x: 0, y: -0.00000077486055, z: 0}
+--- !u!65 &7141483976277749515
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1143771906267672167}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 14, y: 1.9999985, z: 2.245649}
+  m_Center: {x: 0, y: -7.404087e-14, z: -2.5}
 --- !u!1 &5012266831811562598
 GameObject:
   m_ObjectHideFlags: 0
